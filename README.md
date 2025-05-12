@@ -13,6 +13,8 @@ This repository contains Logstash configurations that are compatible with the El
 - [License](#license)
 
 ## Overview
+We've kindly tested these configurations, and they seem well with Logstash 1:8.17.3-1.
+
 Our goal is to provide a comprehensive set of Logstash pipelines that support a wide variety of data sources while following ECS guidelines to maintain consistency across the Elastic Stack.
 
 ## Getting Started
