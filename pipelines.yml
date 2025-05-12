@@ -1,0 +1,21 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+- pipeline.id: ap_alied
+  path.config: "/etc/logstash/conf.d/ap_allied.conf"
+  pipeline.workers: 1
+- pipeline.id: dhcpd
+  path.config: "/etc/logstash/conf.d/dhcpd.conf"
+  pipeline.workers: 1
+- pipeline.id: named
+  path.config: "/etc/logstash/conf.d/named.conf"
+  pipeline.workers: 1
+- pipeline.id: paloalto
+  path.config: "/etc/logstash/conf.d/palo_mixed.conf"
+  pipeline.workers: 1
+- pipeline.id: postfix_saslauth
+  path.config: "/etc/logstash/conf.d/postfix_saslauth.conf"
+  pipeline.workers: 1
+- pipeline.id: squid_access
+  path.config: "/etc/logstash/conf.d/squid_access.conf"
+  pipeline.workers: 1
